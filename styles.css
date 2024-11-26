@@ -1,0 +1,496 @@
+/* Reset básico para eliminar márgenes y paddings por defecto */
+
+body {
+  font-family: 'Times New Roman', Times, serif;  color: #f5f5dc;
+    line-height: 1.6;
+    text-transform: uppercase;
+  background-image: url(./fotos/pexels-nuno-magalhaes-1241549-27857490.jpg) ;
+  background-size: cover; /* Cubre toda la pantalla */
+  background-repeat: no-repeat; /* No repite la imagen */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+  color: white; /* Texto blanco */
+  text-align: center; /* Centrar contenido */
+  padding: 40px 20px; /* Espaciado interno */
+  margin-top: 20px; /* Separación con el carrusel */
+}
+
+.welcome-container {
+  max-width: 900px; /* Limitar ancho del texto */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem; /* Tamaño grande del título */
+  font-weight: 700; /* Negrita */
+  font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px; /* Espaciado entre letras */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.welcome-section p {
+  font-size: 1.2rem; /* Tamaño del texto descriptivo */
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
+  font-weight: 300; /* Peso ligero */
+  margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px; /* Botón más grande */
+  font-size: 1rem; /* Tamaño del texto del botón */
+  color: white; /* Texto blanco */
+  background-color: #1abc9c; /* Botón verde */
+  text-decoration: none; /* Sin subrayado */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold; /* Negrita */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #16a085; /* Color más oscuro al pasar el cursor */
+}
+/* Estilos generales */
+body, html {
+  font-family: 'Montserrat' , sans-serif;
+  color: #f5f5dc;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+/* Aplica la fuente a todo el body */
+body {
+font-family: 'Times New Roman', Times, serif;
+  color: #f5f5dc;
+  line-height: 1.6;
+  text-transform: uppercase;}
+
+/* Secciones */
+section {
+  padding: 20px 10px; /* Reducir espacio vertical dentro de las secciones */
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2.5rem; /* Ajusta este valor para hacer el texto más grande */
+  font-weight: 700; /* Opcional: hace que el título sea más grueso */
+  color: #ffffff; /* Asegúrate de que el color destaque sobre el fondo */
+  margin-bottom: 0.5rem;
+  text-align: center; /* Alinea el título al centro, si deseas */
+}
+header {
+  color: #ffffff; /* Texto blanco */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+header h1 {
+  margin: 0;
+  color: #ffffff;
+  flex: 1;
+  text-align: left; /* Alineación a la izquierda */
+}
+/* Estilos para el menú de navegación */
+nav {
+  flex: 2;
+  text-align: right; /* Alineación a la derecha */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 1.5rem;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+  transition: color 0.3s;
+  text-decoration: none;
+
+}
+nav ul li a:hover {
+  color: #cce5cc; /* Color claro en hover */
+}
+/* Opcional: ajustes de fuente para encabezados */
+h1, h2, h3 {
+  font-weight: 800; /* Usa un peso más grueso para encabezados */
+  color: #b21d1d;
+}
+
+p {
+  font-weight: 600; /* Peso más liviano para párrafos */
+  color: #ffffff;
+}
+h1, h2, h3 {
+  color: #f8f8f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+body {
+  background-image: url(./fotos/grainy-texture-design-abstract-dark-green-background-with-elements_9939554.jpg!w700wp); /* Beige claro */
+  color: #ffffff; /* Color de texto oscuro para contraste */
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  width: 100%; /* Ancho completo del carrusel */
+  height: 300px; /* Altura fija del carrusel */
+  overflow: hidden; /* Oculta contenido fuera del carrusel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  animation: circular 20s linear infinite; /* Movimiento continuo */
+}
+
+.carrusel-item {
+  flex: none;
+  width: 450px; /* Todas las imágenes tendrán tamaño uniforme */
+  height: 450px; /* Formato cuadrado */
+  margin-right: 10px; /* Espaciado entre imágenes */
+}
+
+.carrusel-item img {
+  width: 100%; /* La imagen ocupará todo el contenedor cuadrado */
+  height: 100%;
+  object-fit: cover; /* Las imágenes se escalarán sin distorsión */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+/* Animación para desplazamiento continuo */
+@keyframes circular {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-310px * 5)); } /* Ancho + margen entre imágenes */
+}
+
+/* Sección de imagen de fondo (Hero) */
+.hero {
+  /* background: url('./fotos/pexels-tomfisk-6150114.jpg') no-repeat center center/cover; */
+  /*background-color: rgba(0, 0, 0, 0.3); /* Color gris con opacidad del 30% */
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4b9954;
+  padding: 20px;
+  margin-top: 5px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.cta-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1.5rem 3.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* Sección Nosotros */
+.about {
+  background-color: #aeaeae;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.services {
+
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+}
+
+.mc {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center; /* Centrar los cuadros */
+  gap: 20px; /* Espacio entre cuadros */
+  flex-wrap: wrap; /* Permitir que se adapten en pantallas pequeñas */
+  margin-bottom: 20px; /* Espacio debajo de la sección */
+}
+
+.service-cards p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+
+}
+
+.service-card {
+    color: white;
+    background-color: #76b174; /* Fondo beige */
+    border: 3px solid #163c1f; /* Borde verde grueso */  
+    padding: 20px; /* Más espacio interno */
+    border-radius: 10px; /* Bordes más suaves */
+    width: 500px; /* Más ancho */
+    height: auto; /* Ajustar altura según el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    text-align: center;
+    margin: 0 auto; 
+}
+.service-card  li{
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+
+}
+.service-card  h4{
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-decoration: underline;
+
+}
+.service-card p, 
+.service-card ul {
+    font-size: 1.1rem; /* Texto más grande */
+    line-height: 1.8; /* Mejor separación entre líneas */
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+/* Estilos para la sección de servicios */
+.services2 {
+  background-color: #76b174; /* Fondo beige */
+  color: #ffffff;
+  border: 3px solid #163c1f; /* Borde verde grueso */  
+
+  padding: 3rem 4rem;
+  border-radius: 8px;
+  max-width: 90%; /* Ajuste para que ocupe casi todo el ancho de la página */
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services2 h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services2 p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  text-transform: uppercase;}
+
+.services2 ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.services2 ul ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+.services2 li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.services2 li strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.services2 li ul li {
+  color: #ffffff;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .services {
+    padding: 2rem 1rem;
+    max-width: 95%; /* Ocupa casi todo el ancho en pantallas pequeñas */
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services p, .services li {
+    font-size: 1rem;
+  }
+}
+/* Estilos para la galería de imágenes */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+  gap: 10px; /* Espacio entre las imágenes */
+  width: 100%; /* Hace que la galería ocupe todo el ancho */
+  margin: 0 auto; /* Centra la cuadrícula en la página */
+  padding: 10px; /* Agrega un pequeño padding alrededor */
+}
+
+/* Estilo de cada imagen */
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+  border: 2px solid #333; /* Borde oscuro para cada imagen */
+}
+
+/* Efecto de zoom en las imágenes al pasar el ratón */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive: Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
+/* Sección Galería */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5px;
+  overflow-x: auto; /* Esto permite desplazamiento horizontal si es necesario */
+}
+
+.gallery img {
+  width: 24%; /* Cada imagen ocuparÃ¡ el 24% del ancho del contenedor */
+  height: auto;
+  border-radius: 2px;
+  transition: transform 0.3s ease; /* AnimaciÃ³n para ampliar imagen al pasar el ratÃ³n */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Efecto de ampliaciÃ³n cuando pasas el ratÃ³n por encima */
+}
+/* Sección de Contacto */
+.contact {
+  color: #ffffff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+.contact h2{
+  color: #ffffff;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-icon {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.contact-icon img {
+  width: 80px; /* Ajusta el tamaño del ícono según prefieras */
+  height: 80px;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.contact-icon:hover img {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.contact-icon:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+/* Footer */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
