@@ -4,7 +4,7 @@ body {
   font-family: 'Times New Roman', Times, serif;  color: #f5f5dc;
     line-height: 1.6;
     text-transform: uppercase;
-    background-image: url(../fotos/converted_image.png); /* Beige claro */
+    background-image: url(../fotos/converted_image.png); 
 
   background-size: cover; /* Cubre toda la pantalla */
   background-repeat: no-repeat; /* No repite la imagen */
@@ -33,7 +33,7 @@ body {
 .welcome-section h1 {
   font-size: 2.5rem; /* Tamaño grande del título */
   font-weight: 700; /* Negrita */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
     letter-spacing: 1px; /* Espaciado entre letras */
   text-transform: uppercase; /* Texto en mayúsculas */
   font-size: 2.5rem;
@@ -48,6 +48,7 @@ body {
   font-family: 'Poppins', sans-serif; /* Fuente secundaria */
   font-weight: 300; /* Peso ligero */
   margin-bottom: 30px; /* Espacio debajo del párrafo */
+  font-weight: bold;
 }
 
 .cta-button {
@@ -61,6 +62,8 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   font-weight: bold; /* Negrita */
   transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
+
 }
 
 .cta-button:hover {
@@ -75,7 +78,7 @@ body, html {
 }
 /* Aplica la fuente a todo el body */
 body {
-font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
   color: #f5f5dc;
   line-height: 1.6;
   text-transform: uppercase;}
@@ -308,6 +311,8 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
   text-decoration: underline;
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
+
 
 }
 .service-card p, 
@@ -336,13 +341,13 @@ body {
   color: #ffffff;
   text-align: center;
   margin-bottom: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif; /* Fuente secundaria */
 }
 
 .services2 p {
   font-size: 1.2rem;
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 1.5rem;
   font-weight: 500;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
@@ -416,14 +421,42 @@ body {
 
 /* Responsive: Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+  header {
+    flex-direction: row; /* Mantener horizontalidad */
+}
+
+nav ul {
+    gap: 1rem; /* Reducir espacio entre elementos */
+}
+
+  .hero h2 {
+      font-size: 1rem; /* Reducir el tamaño del título */
+  }
+
+  .hero p {
+      font-size: 1rem; /* Reducir tamaño del texto descriptivo */
+  }
+
+  .hero img {
+      width: 90%; /* Limitar tamaño de la imagen */
+      margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  header {
+    padding: 0.5rem 0.5rem;
+}
+  .hero {
+      padding: 1rem 0.5rem; /* Reducir padding en móviles más pequeños */
+  }
+
+  .hero h2 {
+      font-size: 1.2rem; /* Aún más pequeño en pantallas muy pequeñas */
+  }
+
+  .hero p {
+      font-size: 0.9rem;
   }
 }
 /* Sección Galería */
@@ -459,6 +492,7 @@ body {
 }
 .contact h2{
   color: #ffffff;
+  font-size: 2.5rem;
 }
 .contact-icons {
   display: flex;
