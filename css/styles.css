@@ -4,7 +4,8 @@ body {
   font-family: 'Times New Roman', Times, serif;  color: #f5f5dc;
     line-height: 1.6;
     text-transform: uppercase;
-  background-image: url(./fotos/pexels-nuno-magalhaes-1241549-27857490.jpg) ;
+    background-image: url(../fotos/converted_image.png); /* Beige claro */
+
   background-size: cover; /* Cubre toda la pantalla */
   background-repeat: no-repeat; /* No repite la imagen */
   background-position: center; /* Centra la imagen */
@@ -68,7 +69,7 @@ body {
 /* Estilos generales */
 body, html {
   font-family: 'Montserrat' , sans-serif;
-  color: #f5f5dc;
+  color: #f6f60a;
   line-height: 1.6;
   overflow-x: hidden;
 }
