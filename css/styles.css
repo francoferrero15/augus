@@ -558,6 +558,50 @@ footer {
     padding: 1rem 0;
 }
 }
+@media (min-width: 1500px) {
+  /* Contenedor de los cuadros */
+  .service-cards {
+      display: flex; /* Utilizamos flexbox para organizar los cuadros */
+      flex-wrap: wrap; /* Permitir que los elementos se distribuyan en filas */
+      justify-content: center; /* Centrar los elementos horizontalmente */
+      gap: 30px; /* Espacio entre los cuadros */
+      margin: 0 auto; /* Centrar el contenedor */
+  }
+
+  /* Cuadros superiores (TRABAJOS QUE REALIZAMOS y COMPRAMOS) */
+  .service-card {
+    flex: 1 ; /* Cuadros ocupan el ancho completo */
+
+      padding: 20px; /* Espaciado interno */
+      background-color: #388e3c; /* Fondo verde */
+      color: white; /* Texto en blanco */
+      text-align: justify; /* Texto centrado */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para estilo */
+  }
+
+  /* Cuadro inferior (QUIENES SOMOS) */
+  .services2 {
+      max-width: 63%; /* Sin límite de ancho */
+      padding: 30px; /* Espaciado interno más amplio */
+      background-color: #388e3c; /* Fondo más claro */
+      color: white; /* Texto en blanco */
+      text-align: justify; /* Texto justificado */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para estilo */
+  }
+
+  /* Encabezados */
+  .service-card h4 {
+      font-size: 1.5rem; /* Aumentar tamaño del título */
+      margin-bottom: 10px; /* Espaciado inferior */
+  }
+
+  .service-card.large h4 {
+      text-align: center; /* Centrar el título de "QUIENES SOMOS" */
+      margin-bottom: 20px; /* Espaciado inferior */
+  }
+}
 /* Sección Galería */
 .gallery {
   display: flex;
