@@ -302,8 +302,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
     text-align: justify;
     margin: 0 auto; 
-    min-width: 45%; /* Asegurar que ambos cuadros tengan el mismo ancho */
-    max-width: 45%;
+
 }
 .service-card  li{
   font-weight: bold;
@@ -384,50 +383,30 @@ body {
   color: #ffffff;
 }
 
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-  .services {
-    padding: 2rem 1rem;
-    max-width: 95%; /* Ocupa casi todo el ancho en pantallas pequeñas */
-  }
-
-  .services h2 {
-    font-size: 2rem;
-  }
-
-  .services p, .services li {
-    font-size: 1rem;
-  }
-}
-/* Estilos para la galería de imágenes */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
-  gap: 10px; /* Espacio entre las imágenes */
-  width: 100%; /* Hace que la galería ocupe todo el ancho */
-  margin: 0 auto; /* Centra la cuadrícula en la página */
-  padding: 10px; /* Agrega un pequeño padding alrededor */
-}
-
-/* Estilo de cada imagen */
-.gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
-  border: 2px solid #333; /* Borde oscuro para cada imagen */
-}
-
-/* Efecto de zoom en las imágenes al pasar el ratón */
-.gallery img:hover {
-  transform: scale(1.05);
-}
 
 /* Responsive: Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
   header {
     flex-direction: row; /* Mantener horizontalidad */
+}
+.service-card {
+  flex: 1 1 100%; /* Cada cuadro ocupa todo el ancho */
+  padding: 15px; /* Reducir el padding interno */
+  font-size: 0.9rem; /* Reducir el tamaño del texto */
+}
+
+.service-card h4 {
+  font-size: 1.2rem; /* Reducir tamaño de los títulos */
+  text-align: center; /* Centrar títulos en pantallas pequeñas */
+}
+
+.service-card.large {
+  padding: 15px; /* Reducir el padding interno */
+  font-size: 0.9rem; /* Reducir tamaño del texto */
+}
+
+.service-cards {
+  gap: 15px; /* Reducir espacio entre cuadros */
 }
 
 nav ul {
@@ -446,6 +425,18 @@ nav ul {
       width: 90%; /* Limitar tamaño de la imagen */
       margin: 0 auto;
   }
+  .service-card {
+    flex: 1 1 100%; /* Cuadros ocupan el ancho completo */
+    text-align: left; /* Texto alineado a la izquierda en móviles */
+}
+
+.service-card.large {
+    padding: 20px; /* Espaciado interno consistente */
+}
+
+.service-cards {
+    gap: 15px; /* Reducir el espacio entre cuadros */
+}
 }
 
 @media (max-width: 480px) {
@@ -458,7 +449,24 @@ header h1 {
     font-size: 1.2rem; /* Reducir tamaño del título */
     text-align: center; /* Centrar el título */
 }
+.service-card {
+  padding: 10px; /* Reducir padding aún más */
+  font-size: 0.85rem; /* Texto más pequeño */
+}
 
+.service-card h4 {
+  font-size: 1rem; /* Reducir títulos en pantallas pequeñas */
+  text-align: center; /* Centrar títulos */
+}
+
+.service-card.large {
+  padding: 10px; /* Reducir espaciado interno del cuadro grande */
+  font-size: 0.85rem; /* Reducir tamaño del texto */
+}
+
+.service-cards {
+  gap: 10px; /* Reducir espacio entre cuadros */
+}
 nav ul {
     flex-direction: row; /* Menú en columna */
     gap: 0.5rem; /* Reducir el espacio entre enlaces */
@@ -469,7 +477,19 @@ nav ul {
 nav ul li a {
     font-size: 1rem; /* Texto más pequeño para enlaces */
 }
+.service-card {
+  padding: 15px; /* Reducir padding interno */
+  font-size: 0.9rem; /* Texto más pequeño */
+}
 
+.service-card h4 {
+  font-size: 1.2rem; /* Título más pequeño */
+}
+
+.service-card.large {
+  padding: 15px; /* Reducir espaciado interno del cuadro grande */
+  font-size: 0.9rem; /* Reducir el tamaño del texto */
+}
 .services2 {
 text-align: left;
 }
