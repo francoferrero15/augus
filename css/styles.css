@@ -332,7 +332,6 @@ body {
   background-color: #4baa48; /* Fondo beige */
   color: #ffffff;
   border: 3px solid #163c1f; /* Borde verde grueso */  
-
   padding: 3rem 4rem;
   border-radius: 8px;
   max-width: 80%; /* Ajuste para que ocupe casi todo el ancho de la página */
@@ -459,10 +458,6 @@ header h1 {
   text-align: center; /* Centrar títulos */
 }
 
-.service-card.large {
-  padding: 10px; /* Reducir espaciado interno del cuadro grande */
-  font-size: 0.85rem; /* Reducir tamaño del texto */
-}
 
 .service-cards {
   gap: 10px; /* Reducir espacio entre cuadros */
@@ -492,6 +487,7 @@ nav ul li a {
 }
 .services2 {
 text-align: left;
+max-width: 90%;
 }
 /* Sección principal (Hero) */
 .hero {
