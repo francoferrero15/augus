@@ -63,6 +63,8 @@ body {
   font-weight: bold; /* Negrita */
   transition: background-color 0.3s ease;
   font-family: 'Poppins', sans-serif; /* Fuente secundaria */
+  border: 3px solid #163c1f; /* Borde verde grueso */  
+
 
 }
 
@@ -279,6 +281,7 @@ body {
   gap: 20px; /* Espacio entre cuadros */
   flex-wrap: wrap; /* Permitir que se adapten en pantallas pequeñas */
   margin-bottom: 20px; /* Espacio debajo de la sección */
+  width: 100%;
 }
 
 .service-cards p {
@@ -290,15 +293,17 @@ body {
 
 .service-card {
     color: white;
-    background-color: #76b174; /* Fondo beige */
+    background-color: #4baa48; /* Fondo beige */
     border: 3px solid #163c1f; /* Borde verde grueso */  
-    padding: 20px; /* Más espacio interno */
+    padding: 10px; /* Más espacio interno */
     border-radius: 10px; /* Bordes más suaves */
-    width: 500px; /* Más ancho */
+    width: 550PX; /* Más ancho */
     height: auto; /* Ajustar altura según el contenido */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
     text-align: justify;
     margin: 0 auto; 
+    min-width: 45%; /* Asegurar que ambos cuadros tengan el mismo ancho */
+    max-width: 45%;
 }
 .service-card  li{
   font-weight: bold;
@@ -310,6 +315,7 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
   text-decoration: underline;
+  text-align: center;
   font-family: 'Poppins', sans-serif; /* Fuente secundaria */
 
 
@@ -324,15 +330,15 @@ body {
 }
 /* Estilos para la sección de servicios */
 .services2 {
-  background-color: #76b174; /* Fondo beige */
+  background-color: #4baa48; /* Fondo beige */
   color: #ffffff;
   border: 3px solid #163c1f; /* Borde verde grueso */  
 
   padding: 3rem 4rem;
   border-radius: 8px;
-  max-width: 90%; /* Ajuste para que ocupe casi todo el ancho de la página */
+  max-width: 80%; /* Ajuste para que ocupe casi todo el ancho de la página */
   margin: 2rem auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
 }
 
 .services2 h4 {
